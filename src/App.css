@@ -145,7 +145,7 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
 }
 
 /*------------------------Responsive Design--------------------*/
-@media screen and (min-width: 362px) and (max-width: 476px)
+@media screen and (max-width: 476px)
 {
     .container
     {
