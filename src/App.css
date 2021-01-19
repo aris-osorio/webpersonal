@@ -150,7 +150,27 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
 }
 
 /*------------------------Responsive Design--------------------*/
-@media screen and (max-width: 576px)
+@media screen and (max-width: 476px)
+{
+    .container
+    {
+        padding: 25px!important;
+    }
+    .title
+    {
+        font-size: 86px; 
+    }
+    .col-8
+    {
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+    .fondo
+    {
+        background: rgba(0,0,0,0.8);
+    }
+}
+@media screen and (min-width: 477px) and (max-width: 576px)
 {   
     .container
     {
