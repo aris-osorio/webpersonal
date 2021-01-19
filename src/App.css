@@ -1,0 +1,258 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+
+
+/*helpers*/
+.aparece
+{
+    opacity: 0;
+    transition: all 0.5s;
+}
+.cover
+{
+    background-size: cover;
+}
+.yellow
+{
+    color: yellow!important;
+}
+.white
+{
+    color: white!important;
+}
+.bg-black
+{
+    background-color:#000000;
+}
+
+/*App*/
+*
+{
+    font-family: 'Quicksand', sans-serif;
+}
+body::-webkit-scrollbar
+{
+    width: 5px;
+    background: #000000;
+}
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background: yellow;
+}
+
+.icon:hover
+{
+    cursor: pointer;
+    color: yellow;
+    transition-property: color!important;
+    transition-duration: 0.5s!important;
+    transition-timing-function: ease-in-out!important;
+}
+
+.icon:active
+{
+    font-size: 3.8em;
+}
+
+/*NavBar*/
+.navbar
+{
+    color: white;
+}
+
+.nav-item > a 
+{
+    color: white!important;
+}
+
+.nav-item > a:hover
+{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item > .active 
+{
+    color:yellow!important;
+    border-bottom: 1px solid  yellow!important;
+}
+.obscuro
+{
+    background-color: rgb(20, 18, 18);
+    transition: all 0.5s;
+}
+/*inicio*/
+.mandril
+{
+    background-image: url("./media/mandril.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title
+{
+    font-size: 100px; 
+}
+.subtitle
+{
+    font-size: 32px; 
+}
+span
+{
+    color: yellow;
+}
+.cuadrito
+{
+    width: 10px;
+    height: 10px;
+    background: pink;
+}
+/*perfil*/
+.btn
+{
+    border-color: yellow!important;
+}
+.perfil
+{
+    background-image:url("./media/perfil1.png");
+    background-size: contain;
+    width: 360px; 
+    height: 408.75px;
+}  
+.btn:hover
+{
+    background-color: yellow!important;
+    color: #000000!important;
+    transition-property: background-color!important;
+    transition-duration: 0.5s!important;
+    transition-timing-function: ease-in-out!important;
+}
+
+/*contactame*/
+input, textarea
+{
+    background-color: transparent!important;
+}
+input:focus, input.form-control:focus, textarea:focus, textarea.form-control:focus
+{
+    border-color:yellow!important;
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+/*------------------------Responsive Design--------------------*/
+@media screen and (max-width: 576px)
+{   
+    .container
+    {
+        padding: 25px!important;
+    }
+    .mandril
+    {
+        background-image: url("./media/mandril1.jpg");
+    }
+    .col-8
+    {
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+    .title
+    {
+        font-size: 88px; 
+    }
+    .fondo
+    {
+        background: rgba(0,0,0,0.8);
+    }
+
+}
+@media screen and (min-width: 575px) and (max-width: 823px)
+{  
+    .container
+    {
+        padding: 25px!important;
+    }
+    .mandril
+    {
+        background-image: url("./media/mandril3.jpg");
+    }
+    .col-8
+    {
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+    .title
+    {
+        font-size: 88px; 
+    }
+    .fondo
+    {
+        background: rgba(0,0,0,0.8);
+    }
+    .col-sm-6
+    {
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+    .iconos > .col-sm-6
+    {
+        flex: 0 0 50%!important;
+        max-width: 50%!important;
+        padding: 0 px 0px;
+    }
+    .cuadrito
+    {
+        background: red;
+    }
+    
+}
+@media screen and (min-width: 824px) and (max-width: 1077px) 
+{
+    .cuadrito
+    {
+        background: blue;
+    }
+    #NavContainer
+    {
+        flex: 0 0 70%!important;
+        max-width: 70%!important;
+    }
+    .mandril
+    {
+        background-image: url("./media/mandril2.jpg");
+    }
+    .title
+    {
+        font-size: 88px;  
+    }
+    .perfil
+    {
+        background-repeat: no-repeat;
+    }
+    .iconos > .col-sm-6
+    {
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+}
+@media screen and (min-width: 1078px) and (max-width: 1199.98px) 
+{ 
+    .cuadrito
+    {
+        background: green;
+    }
+    #NavContainer
+    {
+        flex: 0 0 60%!important;
+        max-width: 60%!important;
+    }
+}
