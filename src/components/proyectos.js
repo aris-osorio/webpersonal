@@ -2,11 +2,6 @@ import MemeChat from './memeChat';
 //import SimpleTasks from './simpleTasks'
 
 export default function Proyectos() {
-
-    const redireccionar = (link) => {
-        window.open(link, '_blank');
-    }
-
     return (
         <section id="proyectos">
             <div className="bg-black">
