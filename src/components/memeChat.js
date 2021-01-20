@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { laptop1} from '../media/laptop1.png'
 export default function MemeChat() {
     const redireccionar = (link) => {
         window.open(link, '_blank');
