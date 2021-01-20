@@ -1,6 +1,5 @@
 import MemeChat from './memeChat';
-import MeMeChat from './memeChat'
-import SimpleTasks from './simpleTasks'
+//import SimpleTasks from './simpleTasks'
 
 export default function Proyectos() {
 
