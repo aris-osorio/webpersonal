@@ -37,7 +37,7 @@ export default function Contactame() {
         <section id="contactame">
             <div className="bg-black">
                 <div className="container vh-100 pt-5">
-                    <div className="col-12 d-flex justify-content-center p-3">
+                    <div className="col-12 d-flex justify-content-center p-5">
                         <h1 className="subtitle yellow">Contactame</h1>
                     </div>
                     <div className="aparece">

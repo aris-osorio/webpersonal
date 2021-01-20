@@ -10,7 +10,7 @@ export default function Acerca() {
         <section id="acerca">
             <div className="bg-black">
                 <div className="pt-5 pb-5 container">
-                    <div className="col-12 d-flex justify-content-center p-3">
+                    <div className="col-12 d-flex justify-content-center p-5">
                         <h1 className="subtitle yellow">Perfil</h1>
                     </div>
                     <div className="row d-flex aparece">

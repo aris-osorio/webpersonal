@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import { faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 export default function MemeChat() {
     const redireccionar = (link) => {
         window.open(link, '_blank');
     }
     return (
-        <div className="row aparece d-flex">
-            <div class="col-sm-6 d-flex justify-content-center align-items-center">
+        <div className="row aparece d-flex align-items-center">
+            <div class="col-sm-6 d-flex justify-content-center">
                 <div class="laptop1" />
             </div>
             <div className="col-sm-6">
