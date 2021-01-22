@@ -1,5 +1,6 @@
 import 'swiper/swiper.scss';
 import MemeChat from './memeChat';
+import SimpleTasks from './simpleTasks'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import 'swiper/components/navigation/navigation.scss';
@@ -7,12 +8,7 @@ import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/effect-coverflow/effect-coverflow.scss';
 import SwiperCore,{ EffectCoverflow, Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 
-
-
-
 SwiperCore.use([EffectCoverflow, Navigation, Pagination, Scrollbar, A11y, Autoplay]);
-
-//import SimpleTasks from './simpleTasks'
 
 export default function Proyectos() {
     
@@ -26,22 +22,13 @@ export default function Proyectos() {
                     <Swiper 
                         className="aparece"
                         effect="coverflow"
-                        spaceBetween={0}
+                        spaceBetween={50}
                         slidesPerView={3}
                         navigation
                         loop={true}
-                        autoplay={{
-                            delay: 5000,
-                            disableOnInteraction: false
-                        }}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
                     >
                         <SwiperSlide><MemeChat/></SwiperSlide>
-                        <SwiperSlide><MemeChat/></SwiperSlide>
-                        <SwiperSlide><MemeChat/></SwiperSlide>
-                        <SwiperSlide><MemeChat/></SwiperSlide>
-                        <SwiperSlide><MemeChat/></SwiperSlide>
+                        <SwiperSlide><SimpleTasks/></SwiperSlide>
                         <SwiperSlide><MemeChat/></SwiperSlide>
                     </Swiper>
                 </div>
