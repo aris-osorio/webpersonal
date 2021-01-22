@@ -127,13 +127,13 @@ span
     transition-timing-function: ease-in-out!important;
 }
 /*proyectos*/
-.laptop1
+.swiper-button-next, .swiper-button-prev
 {
-    background-image:url("./media/laptop1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 676px; 
-    height: 300px;
+    color: yellow!important;
+}
+.cursor
+{
+    cursor: default;
 }
 
 /*contactame*/

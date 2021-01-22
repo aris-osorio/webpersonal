@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 export default function NavBar() {
     return (
-        <Navbar id="nav" collapseOnSelect expand="lg" variant="dark" className="fixed-top">
+        <Navbar id="nav" collapseOnSelect expand="lg" variant="dark" className="fixed-top" transition="fade">
             <div className="col-4">
                 <Navbar.Brand href="/" className="julius yellow">Aris</Navbar.Brand>
             </div>
