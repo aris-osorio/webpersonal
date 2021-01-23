@@ -1,6 +1,7 @@
 import 'swiper/swiper.scss';
 import MemeChat from './memeChat';
-import SimpleTasks from './simpleTasks'
+import SimpleTasks from './simpleTasks';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import 'swiper/components/navigation/navigation.scss';
@@ -22,10 +23,41 @@ export default function Proyectos() {
                     <Swiper 
                         className="aparece"
                         effect="coverflow"
-                        spaceBetween={50}
-                        slidesPerView={3}
+                        spaceBetween={30}
+                        slidesPerView = {3}
                         navigation
                         loop={true}
+                        breakpoints=
+                        {
+                            {
+                                476: 
+                                {
+                                    width: 418,
+                                    slidesPerView: 1,
+                                },
+                                576: 
+                                {
+                                    width: 518,
+                                    slidesPerView: 1,
+                                },
+                                823: 
+                                {
+                                    width: 765,
+                                    slidesPerView: 3,
+                                },
+                                1077: 
+                                {
+                                    width: 1049,
+                                    slidesPerView: 3,
+                                },
+                                1199.98: 
+                                {
+                                    width: 1142,
+                                    slidesPerView: 3,
+                                }
+                            }
+                        }
+                        
                     >
                         <SwiperSlide><MemeChat/></SwiperSlide>
                         <SwiperSlide><SimpleTasks/></SwiperSlide>
