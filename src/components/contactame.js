@@ -1,13 +1,22 @@
+import Axios from 'axios'
+import { useState } from "react"
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import ClipLoader from "react-spinners/ClipLoader";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
-import emailjs from 'emailjs-com';
 
+
+
+toast.configure();
 export default function Contactame() {
 
     let nombre = ""
     let correo = ""
     let mensaje = ""
+
+    let [icono, setIcono] = useState([<FontAwesomeIcon icon={faLongArrowAltRight} />, "mt-1"])
 
     const redireccionar = (link) => {
         window.open(link, '_blank');
@@ -19,18 +28,48 @@ export default function Contactame() {
         document.getElementById("inputMensaje").value = "";
     }
 
+    const bloquear = () =>{
+        document.getElementById("inputName").classList.add("desactivar")
+        document.getElementById("inputEmail").classList.add("desactivar")
+        document.getElementById("inputMensaje").classList.add("desactivar")
+        document.getElementById("Btnenviar").classList.add("desactivar")
+    }
+
+    const desbloquear = () =>{
+        document.getElementById("inputName").classList.remove("desactivar")
+        document.getElementById("inputEmail").classList.remove("desactivar")
+        document.getElementById("inputMensaje").classList.remove("desactivar")
+        document.getElementById("Btnenviar").classList.remove("desactivar")
+    }
+
+    const flecha=()=>
+    {
+        setIcono([<FontAwesomeIcon icon={faLongArrowAltRight} />, "mt-1"])
+    }
+
+    const cargando=()=>
+    {
+        setIcono([<ClipLoader color="yellow" loading = {true} size={20} />, "mt-1"])
+    }
+
     const enviarCorreo = () => {
-        emailjs.send("service_lz2gfwh", "template_s93zrwn",
+        cargando()
+        bloquear()
+        Axios.post(`https://correos-arisoso.herokuapp.com/correos/`,
             {
-                nombre_cliente: nombre.value,
-                mensaje_cliente: mensaje.value,
-                correo_cliente: correo.value
-            }, "user_1QPMAW15vauwZvzOWeVXo"
-        ).then(res => {
-            console.log('Email successfully sent!')
-            resetear();
-        }
-        ).catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err));
+                nombre: nombre.value,
+                correo: correo.value,
+                mensaje: mensaje.value,
+            }).then(res => {
+                resetear()
+                toast("Se envio mensaje correctamente");
+                desbloquear()
+                flecha()
+            }).catch((error) => {
+                toast('Error al enviar mensaje intenta mas tarde')
+                desbloquear()
+                flecha()
+            });
     }
 
     return (
@@ -54,8 +93,8 @@ export default function Contactame() {
                         <div className="p-3">
                             <label htmlFor="inputMensaje" className="yellow">Tu mensaje</label>
                             <textarea className="form-control form-control-lg mb-3 input rounded-0 border-top-0 border-left-0 border-right-0" ref={txt => mensaje = txt} id="inputMensaje" placeholder="Ingresa tu mensaje aqui" rows="3" />
-                            <div className="">
-                                <button type="button" className="btn btn-outline-warning btn-lg yellow" onClick={enviarCorreo}>Enviar <FontAwesomeIcon icon={faLongArrowAltRight} className="ml-2" /></button>
+                            <div className="d-flex">
+                                <button id="Btnenviar" type="button" className="d-flex btn btn-outline-warning btn-lg yellow" onClick={enviarCorreo}><div className="mr-2">Enviar</div> <div className= {icono[1]}>{icono[0]}</div></button>
                             </div>
                         </div>
                         <div className="col-12 d-flex justify-content-center pt-2">

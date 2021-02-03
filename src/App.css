@@ -154,6 +154,22 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     transition-delay: 0s;
 }
 
+.desactivar
+{
+    pointer-events: none;       
+}
+
+.Toastify__toast, .Toastify__close-button
+{
+    background: #000000!important;
+    color: yellow!important;
+}
+
+.Toastify__progress-bar
+{
+    background: yellow!important;
+}
+
 /*------------------------Responsive Design--------------------*/
 @media screen and (max-width: 476px)
 {

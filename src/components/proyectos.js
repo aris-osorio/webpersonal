@@ -30,15 +30,23 @@ export default function Proyectos() {
                         breakpoints=
                         {
                             {
-                                476: 
+                                200: 
+                                {
+                                    width: 200,
+                                    slidesPerView: 1,
+                                    spaceBetween: 50,
+                                },
+                                400: 
                                 {
                                     width: 418,
                                     slidesPerView: 1,
+                                    spaceBetween: 0,
                                 },
                                 576: 
                                 {
                                     width: 518,
                                     slidesPerView: 1,
+                                    spaceBetween : 0,
                                 },
                                 823: 
                                 {
