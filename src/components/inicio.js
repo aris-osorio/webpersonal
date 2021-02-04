@@ -4,7 +4,7 @@ export default function Inicio() {
 
     return (
         <section id = "inicio">
-            <img className="mandril cover"/>
+            <img className="mandril cover" alt="mandril"/>
                 <div className="vh-100 d-flex align-items-center">
                     <div className="text-white col-8 fondo aparece">
                         <h1 className="title julius text-center m-0 p-0">Aris Osorio</h1>
