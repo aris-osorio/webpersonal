@@ -87,10 +87,8 @@ body::-webkit-scrollbar-thumb
 .mandril
 {
     background: url("./media/mandril.jpg");
-    height: auto;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
 }
 .title
 {
