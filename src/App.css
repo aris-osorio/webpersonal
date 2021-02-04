@@ -88,6 +88,7 @@ body::-webkit-scrollbar-thumb
 {
     background-image: url("./media/mandril.jpg");
     height: 100%;
+    display:block;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -169,7 +170,10 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
 {
     background: yellow!important;
 }
-
+.pb
+{
+    padding-bottom: 60px;
+}
 /*------------------------Responsive Design--------------------*/
 @media screen and (max-width: 476px)
 {
