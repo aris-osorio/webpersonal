@@ -68,9 +68,14 @@ body::-webkit-scrollbar-thumb
 {
     color:yellow!important;
 }
-.navbar > svg:active
+.col-2 > .icon
 {
-    
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.col-2 > .icon:active
+{
+    font-size: 1.9em;
 }
 .obscuro
 {
@@ -171,6 +176,15 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     {
         padding: 25px!important;
     }
+    .navbar
+    {
+        background-color: rgb(20, 18, 18);
+        transition: all 0.5s ease-in-out;
+    }
+    .col-2 > .icon
+    {
+        visibility: visible;
+    }
     .mandril
     {
         background-image: url("./media/mandril1.jpg");
@@ -192,12 +206,22 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     {
         background: rgba(0,0,0,0.8);
     }
+    .navbar > .col-8
+    {
+        flex: 0 0 30%!important;
+        max-width: 30%!important;
+        visibility: hidden;
+    }
 }
 @media screen and (min-width: 477px) and (max-width: 576px)
 {   
     .container
     {
         padding: 25px!important;
+    }
+    .col-2 > .icon
+    {
+        visibility: visible;
     }
     .mandril
     {
@@ -216,6 +240,12 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     {
         background: rgba(0,0,0,0.8);
     }
+    .navbar > .col-8
+    {
+        flex: 0 0 30%!important;
+        max-width: 30%!important;
+        visibility: hidden;
+    }
 
 }
 @media screen and (min-width: 575px) and (max-width: 823px)
@@ -223,6 +253,10 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .container
     {
         padding: 25px!important;
+    }
+    .col-2 > .icon
+    {
+        visibility: visible;
     }
     .mandril
     {
@@ -257,15 +291,12 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         flex: 0 0 60%!important;
         max-width: 60%!important;
         visibility: hidden;
+        transition: all 0.5s ease-in-out;
     }
     
 }
 @media screen and (min-width: 824px) and (max-width: 1077px) 
 {
-    .cuadrito
-    {
-        background: blue;
-    }
     #NavContainer
     {
         flex: 0 0 70%!important;
@@ -291,5 +322,9 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
 }
 @media screen and (min-width: 1078px) and (max-width: 1199.98px) 
 { 
-   
+    .col-2 > .icon
+    {
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+    }
 }
