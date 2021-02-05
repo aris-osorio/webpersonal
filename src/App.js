@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import React, { useEffect } from 'react'
 import Menu from './components/menu'
 import NavBar from './components/navbar'
