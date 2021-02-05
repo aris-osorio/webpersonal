@@ -34,8 +34,9 @@ export default function NavBar() {
                     </div>
                 </div>
             </div>
-            <div className="col-2 d-flex justify-content-end">     
-                <FontAwesomeIcon icon={faCircle} className="fa-2x yellow icon"  />
+            <div className="col-2 d-flex justify-content-end">
+                menu     
+                <FontAwesomeIcon icon={faCircle} className="fa-2x yellow icon ml-2"  />
             </div>
         </nav>
     )
