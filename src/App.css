@@ -291,7 +291,6 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         flex: 0 0 60%!important;
         max-width: 60%!important;
         visibility: hidden;
-        transition: all 0.5s ease-in-out;
     }
     
 }
