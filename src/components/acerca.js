@@ -9,7 +9,7 @@ export default function Acerca() {
     return (
         <section id="acerca">
             <div className="bg-black">
-                <div className="pt-5 pb-5 container">
+                <div className="pt-5 pb-5 container bg-black">
                     <div className="col-12 d-flex justify-content-center p-5">
                         <h1 className="subtitle yellow">Perfil</h1>
                     </div>
