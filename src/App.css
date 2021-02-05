@@ -51,19 +51,10 @@ body::-webkit-scrollbar-thumb
     transition-timing-function: ease-in-out!important;
 }
 
-.icon:active
-{
-    font-size: 3.8em;
-}
-
 /*NavBar*/
-.navbar
-{
-    color: white;
-}
-
 .nav-item > a 
 {
+    font-size: 17px!important;
     color: white!important;
 }
 
@@ -76,7 +67,10 @@ body::-webkit-scrollbar-thumb
 .nav-item > .active 
 {
     color:yellow!important;
-    border-bottom: 1px solid  yellow!important;
+}
+.navbar > svg:active
+{
+    
 }
 .obscuro
 {
@@ -258,6 +252,12 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         max-width: 50%!important;
         padding: 0 px 0px;
     }
+    .navbar > .col-8
+    {
+        flex: 0 0 60%!important;
+        max-width: 60%!important;
+        visibility: hidden;
+    }
     
 }
 @media screen and (min-width: 824px) and (max-width: 1077px) 
@@ -291,9 +291,5 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
 }
 @media screen and (min-width: 1078px) and (max-width: 1199.98px) 
 { 
-    #NavContainer
-    {
-        flex: 0 0 60%!important;
-        max-width: 60%!important;
-    }
+   
 }
