@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useEffect } from 'react'
 import NavBar from './components/navbar'
-import Inicio from './components/inicio'
+//import Inicio from './components/inicio'
 import Acerca from './components/acerca'
 import Proyectos from './components/proyectos'
 import Contactame from './components/contactame'
