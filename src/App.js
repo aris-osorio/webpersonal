@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useEffect } from 'react'
-//import NavBar from './components/navbar'
+import NavBar from './components/navbar'
 import Inicio from './components/inicio'
 import Acerca from './components/acerca'
 import Proyectos from './components/proyectos'
@@ -43,6 +43,7 @@ export default function App() {
   document.title = 'Aris Osorio';
   return (
     <div className="app">
+      <NavBar />
       <Inicio />
       <Acerca />
       <Proyectos />

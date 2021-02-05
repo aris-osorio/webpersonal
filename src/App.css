@@ -84,6 +84,12 @@ body::-webkit-scrollbar-thumb
     transition: all 0.5s;
 }
 /*inicio*/
+.mandril
+{
+    background-image: url("./media/mandril.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
 .title
 {
     font-size: 100px; 
@@ -171,6 +177,10 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     {
         padding: 25px!important;
     }
+    .mandril
+    {
+        background-image: url("./media/mandril1.jpg");
+    }
     .title
     {
         font-size: 61px; 
@@ -195,6 +205,10 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     {
         padding: 25px!important;
     }
+    .mandril
+    {
+        background-image: url("./media/mandril1.jpg");
+    }
     .col-8
     {
         flex: 0 0 100%!important;
@@ -215,6 +229,10 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .container
     {
         padding: 25px!important;
+    }
+    .mandril
+    {
+        background-image: url("./media/mandril3.jpg");
     }
     .col-8
     {
@@ -252,6 +270,10 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     {
         flex: 0 0 70%!important;
         max-width: 70%!important;
+    }
+    .mandril
+    {
+        background-image: url("./media/mandril2.jpg");
     }
     .title
     {
