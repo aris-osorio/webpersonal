@@ -51,6 +51,30 @@ body::-webkit-scrollbar-thumb
     transition-timing-function: ease-in-out!important;
 }
 
+/*menu*/
+#menu
+{
+    height: 100%;
+    width: 0%;
+    visibility: hidden;
+    z-index: 2!important;
+    transition: width 0.5s;
+}
+#menu.activado
+{
+    width: 100%;
+    visibility: visible;
+}
+#menu.desactivado
+{
+    width: 0%;  
+    visibility: visible;
+}
+.navbar
+{
+    z-index: 1!important;
+}
+
 /*NavBar*/
 .nav-item > a 
 {
@@ -70,10 +94,11 @@ body::-webkit-scrollbar-thumb
 }
 .col-2 > .icon
 {
+    opacity: 0.5;
     visibility: hidden;
     transition: all 0.5s ease-in-out;
 }
-.col-2 > .icon:active
+.d-flex > .icon:active
 {
     font-size: 1.9em;
 }
@@ -175,11 +200,6 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .container
     {
         padding: 25px!important;
-    }
-    .navbar
-    {
-        background-color: rgb(20, 18, 18);
-        transition: all 0.5s ease-in-out;
     }
     .col-2 > .icon
     {

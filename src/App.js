@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useEffect } from 'react'
+import Menu from './components/menu'
 import NavBar from './components/navbar'
 import Inicio from './components/inicio'
 import Acerca from './components/acerca'
@@ -9,13 +10,31 @@ import Contactame from './components/contactame'
 export default function App() {
 
   useEffect(() => {
+    
     elementoAparece[0].style.opacity = 1;
+
+    document.getElementsByClassName('btn-menu')[0].addEventListener('click', function() {
+      
+      document.getElementById('menu').classList.toggle("activado");
+      document.getElementById('menu').classList.remove("desactivado");
+
+    });
+    
+    document.getElementsByClassName('btn-cerrar')[0].addEventListener('click', function() {
+      
+      document.getElementById('menu').classList.toggle("desactivado");
+      document.getElementById('menu').classList.remove("activado");
+
+    });
+
+
   });
 
   let html = document.getElementsByTagName('html')[0];
   let navBar = document.getElementsByClassName('navbar');
   let elementoAparece = document.getElementsByClassName('aparece');
-  
+ 
+
   window.addEventListener('scroll', (event) => {
     let topVent = html.scrollTop;
     for(let i = 0; i < elementoAparece.length; i++){
@@ -43,6 +62,7 @@ export default function App() {
   document.title = 'Aris Osorio';
   return (
     <div className="app">
+      <Menu />
       <NavBar />
       <Inicio />
       <Acerca />

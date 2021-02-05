@@ -1,12 +1,13 @@
 import { Link } from "react-scroll";
 import Logo from '../media/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircle } from '@fortawesome/free-regular-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 export default function NavBar() {
+
     return (
-        <nav class="navbar fixed-top">
-            <div class="col-2">
-                <span class="navbar-brand mb-0 h1">
+        <nav className="navbar fixed-top">
+            <div className="col-2">
+                <span className="navbar-brand mb-0 h1">
                     <img src={Logo} alt="logo" width="20" height="20" className="pb-1" />&nbsp;&nbsp;arisoso.com
                 </span>
             </div>
@@ -35,8 +36,7 @@ export default function NavBar() {
                 </div>
             </div>
             <div className="col-2 d-flex justify-content-end">
-                menu     
-                <FontAwesomeIcon icon={faCircle} className="fa-2x yellow icon ml-2"  />
+                <FontAwesomeIcon icon={faBars} className="fa-2x yellow icon btn-menu"/>
             </div>
         </nav>
     )
