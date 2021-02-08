@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb
 }
 html 
 {
-    min-height: 100vh;
+    min-height: 100vh!important;
 }
 
 .icon:hover
@@ -63,6 +63,7 @@ html
     visibility: hidden;
     z-index: 3!important;
     transition: width 0.5s;
+    min-height: 100vh!important;
 }
 #menu.activado
 {
@@ -137,7 +138,7 @@ html
 .mandril
 {
     background-image: url("./media/mandril.jpg");
-     /*background-attachment: fixed;*/
+    background-attachment: fixed;
     background-size: cover;
 }
 mandril:active 
