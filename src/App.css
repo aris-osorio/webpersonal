@@ -133,12 +133,9 @@ body::-webkit-scrollbar-thumb
 /*inicio*/
 .mandril
 {
-    display: block;
     background-image: url("./media/mandril.jpg");
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-size: cover;
-    background-color: #000000;
-    -webkit-overflow-scrolling: touch;
 }
 mandril:active 
 {
