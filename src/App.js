@@ -1,6 +1,6 @@
 import './App.css'
-import React, { useEffect } from 'react'
 import Menu from './components/menu'
+import React, { useEffect } from 'react'
 import NavBar from './components/navbar'
 import Inicio from './components/inicio'
 import Acerca from './components/acerca'
@@ -10,26 +10,45 @@ import Contactame from './components/contactame'
 export default function App() {
 
   useEffect(() => {
+
+    let links = document.getElementsByClassName('Link');
+    let links_menu = document.getElementsByClassName('links-menu');
+    let items = document.getElementsByClassName('items-menu');
+    let btn_cerrar = document.getElementsByClassName('btn-cerrar');
     
     elementoAparece[0].style.opacity = 1;
 
-    document.getElementsByClassName('btn-menu')[0].addEventListener('click', function() {
-      
+    document.getElementsByClassName('btn-menu')[0].addEventListener('click', function() { 
       document.getElementById('menu').classList.toggle("activado");
       document.getElementById('menu').classList.remove("desactivado");
+      items[0].style.opacity = 1;
+      items[0].style.pointerEvents = "";
+      document.getElementsByTagName("BODY")[0].classList.add('no_scroll');
+    }); 
 
-    });
-    
-    document.getElementsByClassName('btn-cerrar')[0].addEventListener('click', function() {
-      
-      document.getElementById('menu').classList.toggle("desactivado");
-      document.getElementById('menu').classList.remove("activado");
+    for(let i = 0; i <  btn_cerrar.length; i++)
+    {
+      btn_cerrar[i].addEventListener('click', function() { 
+        document.getElementById('menu').classList.toggle("desactivado");
+        document.getElementById('menu').classList.remove("activado");
+        items[0].style.opacity = 0;
+        items[0].style.pointerEvents = "none";
+        document.getElementsByTagName("BODY")[0].classList.remove('no_scroll');
+      });
+    }
 
-    });
-
+    for(let i = 0; i <  links_menu.length; i++)
+    {
+      links_menu[i].addEventListener('click', function() { 
+        links[i].focus();
+        links[i].click();
+        document.getElementsByClassName('bg-links')[0].classList.remove('bg-links');
+        links_menu[i].classList.add('bg-links');
+      });
+    }
 
   });
-
+  
   let html = document.getElementsByTagName('html')[0];
   let navBar = document.getElementsByClassName('navbar');
   let elementoAparece = document.getElementsByClassName('aparece');

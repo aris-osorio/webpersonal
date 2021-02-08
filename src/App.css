@@ -63,25 +63,46 @@ body::-webkit-scrollbar-thumb
 #menu.activado
 {
     width: 100%;
-    visibility: visible;
+    visibility: visible!important;
 }
 #menu.desactivado
 {
     width: 0%;  
-    visibility: visible;
+    visibility: visible!important;
+    transition: width 0.5s;
 }
+.items-menu
+{
+    transition: opacity 0.4s;
+}
+.Link
+{
+    font-size:larger!important ;
+}
+.links-menu:hover
+{
+    cursor: pointer;
+    background-color: rgb(20, 18, 18);
+}
+.bg-links
+{
+    background-color: rgb(20, 18, 18);
+}
+.no_scroll
+{
+    overflow:hidden;
+}
+/*NavBar*/
 .navbar
 {
     z-index: 2!important;
 }
 
-/*NavBar*/
 .nav-item > a 
 {
-    font-size: 17px!important;
+    font-size: 17px;
     color: white!important;
 }
-
 .nav-item > a:hover
 {
     cursor: pointer;
@@ -101,6 +122,7 @@ body::-webkit-scrollbar-thumb
 .d-flex > .icon:active
 {
     font-size: 1.9em;
+    margin: 2px;
 }
 .obscuro
 {
@@ -321,6 +343,10 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
 }
 @media screen and (min-width: 824px) and (max-width: 1077px) 
 {
+    body
+    {
+        overflow: scroll!important;
+    }
     #NavContainer
     {
         flex: 0 0 70%!important;
@@ -343,12 +369,35 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         flex: 0 0 100%!important;
         max-width: 100%!important;
     }
+    #menu
+    {   
+        width: 0!important;;
+        visibility: hidden!important;
+    }
+    .items-menu
+    {
+        visibility: hidden!important;
+    }
+
 }
-@media screen and (min-width: 1078px) and (max-width: 1199.98px) 
+@media screen and (min-width: 1078px)
 { 
+    body
+    {
+        overflow: scroll!important;
+    }
     .col-2 > .icon
     {
         visibility: hidden;
         transition: all 0.5s ease-in-out;
+    }
+    #menu
+    {
+        width: 0!important;
+        visibility: hidden!important;
+    }
+    .items-menu
+    {
+        visibility: hidden!important;
     }
 }
