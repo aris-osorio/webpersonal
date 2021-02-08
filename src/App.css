@@ -59,6 +59,7 @@ body::-webkit-scrollbar-thumb
     visibility: hidden;
     z-index: 3!important;
     transition: width 0.5s;
+    -webkit-overflow-scrolling: touch;
 }
 #menu.activado
 {
@@ -137,7 +138,6 @@ body::-webkit-scrollbar-thumb
     background-size: cover;
     height: auto;
     background-color: #000000;
-    -webkit-overflow-scrolling: touch;
 }
 .title
 {
@@ -346,7 +346,7 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
 {
     body
     {
-        overflow: scroll!important;
+        overflow:visible!important;
     }
     #NavContainer
     {
@@ -381,11 +381,11 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     }
 
 }
-@media screen and (min-width: 1078px)
+@media screen and (min-width: 1078px)  
 { 
     body
     {
-        overflow: scroll!important;
+        overflow:visible!important;
     }
     .col-2 > .icon
     {
