@@ -30,6 +30,7 @@
 *
 {
     font-family: 'Quicksand', sans-serif;
+    -webkit-overflow-scrolling: touch;
 }
 body::-webkit-scrollbar
 {
@@ -60,7 +61,6 @@ body::-webkit-scrollbar-thumb
     z-index: 3!important;
     transition: width 0.5s;
     position: fixed;
-    -webkit-overflow-scrolling: touch;
 }
 #menu.activado
 {
