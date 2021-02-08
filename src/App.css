@@ -134,8 +134,8 @@ body::-webkit-scrollbar-thumb
 .mandril
 {
     background-image: url("./media/mandril.jpg");
-    /*background-attachment: fixed;*/
-    background-size: cover;
+    background-attachment: fixed;
+    /*background-size: cover;*/
 }
 mandril:active 
 {
