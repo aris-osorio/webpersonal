@@ -41,6 +41,10 @@ body::-webkit-scrollbar-thumb
     border-radius: 5px;
     background: yellow;
 }
+html 
+{
+    min-height: 100vh;
+}
 
 .icon:hover
 {
