@@ -59,7 +59,6 @@ body::-webkit-scrollbar-thumb
     visibility: hidden;
     z-index: 3!important;
     transition: width 0.5s;
-    position: fixed;
 }
 #menu.activado
 {
@@ -134,8 +133,8 @@ body::-webkit-scrollbar-thumb
 .mandril
 {
     background-image: url("./media/mandril.jpg");
-    background-attachment: fixed;
-    /*background-size: cover;*/
+     /*background-attachment: fixed;*/
+    background-size: cover;
 }
 mandril:active 
 {
