@@ -137,6 +137,7 @@ html
 /*inicio*/
 .mandril
 {
+    position: absolute;
     background-image: url("./media/mandril.jpg");
     background-attachment: fixed;
     background-size: cover;
