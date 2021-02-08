@@ -30,7 +30,6 @@
 *
 {
     font-family: 'Quicksand', sans-serif;
-    -webkit-overflow-scrolling: touch;
 }
 body::-webkit-scrollbar
 {
@@ -139,6 +138,7 @@ body::-webkit-scrollbar-thumb
     background-size: cover;
     height: auto;
     background-color: #000000;
+    -webkit-overflow-scrolling: touch;
 }
 .title
 {
