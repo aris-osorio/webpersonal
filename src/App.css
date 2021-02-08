@@ -136,9 +136,12 @@ body::-webkit-scrollbar-thumb
     background-image: url("./media/mandril.jpg");
     background-attachment: fixed;
     background-size: cover;
-    height: auto;
     background-color: #000000;
     -webkit-overflow-scrolling: touch;
+}
+mandril:active 
+{
+    height: auto;
 }
 .title
 {
