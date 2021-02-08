@@ -2,11 +2,15 @@ import { Link } from "react-scroll";
 import Logo from '../media/logo.svg';
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function App() {
+    const redireccionar = (link) => {
+        window.open(link, '_blank');
+    }
     return (
         <div id="menu" className="bg-black fixed-top">
-            <div className = "items-menu">
+            <div className="items-menu">
                 <div className="row p-2">
                     <div className="col-6">
                         <span className="navbar-brand mb-0 h1 ml-4">
@@ -37,6 +41,14 @@ export default function App() {
                         <Link className="Link" activeClass="active" to="contactame" spy={true} smooth={true} duration={500}>
                             Contactame
                         </Link>
+                    </div>
+                </div>
+                <div className="col-12 d-flex justify-content-center pt-2">
+                    <div className="pr-4">
+                        <FontAwesomeIcon icon={faLinkedinIn} className="fa-4x icon" onClick={() => redireccionar('https://www.linkedin.com/in/aris-osorio/')} />
+                    </div>
+                    <div className="pl-4">
+                        <FontAwesomeIcon icon={faGithub} className="fa-4x icon" onClick={() => redireccionar('https://github.com/aris-osorio')} />
                     </div>
                 </div>
             </div>

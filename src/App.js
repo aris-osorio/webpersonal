@@ -40,19 +40,15 @@ export default function App() {
     for(let i = 0; i <  links_menu.length; i++)
     {
       links_menu[i].addEventListener('click', function() { 
-        links[i].focus();
         links[i].click();
-        document.getElementsByClassName('bg-links')[0].classList.remove('bg-links');
-        links_menu[i].classList.add('bg-links');
       });
     }
-
   });
   
   let html = document.getElementsByTagName('html')[0];
   let navBar = document.getElementsByClassName('navbar');
   let elementoAparece = document.getElementsByClassName('aparece');
- 
+  let links_menu = document.getElementsByClassName('links-menu'); 
 
   window.addEventListener('scroll', (event) => {
     let topVent = html.scrollTop;
@@ -60,10 +56,12 @@ export default function App() {
       let topelemAparece = elementoAparece[i].offsetTop;
       if(topVent > topelemAparece - 400){
         elementoAparece[i].style.opacity = 1;
+        links_menu[i].classList.add('bg-links')
         for(let j = 0; j < elementoAparece.length; j++){
           if(j !== i)
           {
             elementoAparece[j].style.opacity = 0;
+            links_menu[j].classList.remove('bg-links')
           }
         }
       }
@@ -75,6 +73,7 @@ export default function App() {
       {
         navBar[0].classList.add("obscuro")
       }
+
     }
   });
   
