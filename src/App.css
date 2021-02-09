@@ -41,11 +41,13 @@ body::-webkit-scrollbar-thumb
     border-radius: 5px;
     background: yellow;
 }
-html 
-{
+body {
     min-height: 100vh!important;
-}
-
+    min-height: -webkit-fill-available!important;
+  }
+  html {
+    height: -webkit-fill-available!important;
+  }
 .icon:hover
 {
     cursor: pointer;
@@ -58,12 +60,11 @@ html
 /*menu*/
 #menu
 {
-    height: 100vh !important;
+    min-height: 100vh!important;
     width: 0%;
     visibility: hidden;
-    z-index: 100!important;
+    z-index: 3!important;
     transition: width 0.5s;
-    position: fixed !important;
 }
 #menu.activado
 {
@@ -137,6 +138,7 @@ html
 /*inicio*/
 .mandril
 {
+    min-height: 100vh!important;
     background-image: url("./media/mandril.jpg");
     background-attachment: fixed;
     background-size: cover;
