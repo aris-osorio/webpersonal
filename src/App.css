@@ -133,10 +133,14 @@ body::-webkit-scrollbar-thumb
 .mandril
 {
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     background-image: url("./media/mandril.jpg");
     background-attachment: fixed;
     background-size: cover;
+    display: table;
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
 }
 .title
 {
