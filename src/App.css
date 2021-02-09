@@ -138,10 +138,6 @@ body::-webkit-scrollbar-thumb
     background-attachment: fixed;
     background-size: cover;
 }
-.mandril:active 
-{
-    height: auto;
-}
 .title
 {
     font-size: 100px; 
