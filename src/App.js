@@ -65,13 +65,11 @@ export default function App() {
     let topVent = html.scrollTop;
     for(let i = 0; i < elementoAparece.length; i++){
       let topelemAparece = elementoAparece[i].offsetTop;
-      if(topVent > topelemAparece - 200){
-        elementoAparece[i].style.opacity = 1;
+      if(topVent > topelemAparece - 400){
         links_menu[i].classList.add('bg-links')
         for(let j = 0; j < elementoAparece.length; j++){
           if(j !== i)
           {
-            elementoAparece[j].style.opacity = 0;
             links_menu[j].classList.remove('bg-links')
           }
         }

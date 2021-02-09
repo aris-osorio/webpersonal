@@ -4,11 +4,6 @@
 
 
 /*helpers*/
-.aparece
-{
-    opacity: 0;
-    transition: all 0.5s;
-}
 .cover
 {
     background-size: cover;
