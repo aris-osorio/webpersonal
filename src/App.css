@@ -137,7 +137,6 @@ body::-webkit-scrollbar-thumb
     background-image: url("./media/mandril.jpg");
     background-attachment: fixed;
     background-size: cover;
-    display: table;
 }
 .title
 {
