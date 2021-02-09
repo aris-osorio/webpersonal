@@ -259,6 +259,10 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         max-width: 30%!important;
         visibility: hidden;
     }
+    body
+    {
+        -webkit-overflow-scrolling: touch
+    }
 }
 @media screen and (min-width: 477px) and (max-width: 576px)
 {   
@@ -293,6 +297,10 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         flex: 0 0 30%!important;
         max-width: 30%!important;
         visibility: hidden;
+    }
+    body
+    {
+        -webkit-overflow-scrolling: touch
     }
 
 }
@@ -341,7 +349,10 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         max-width: 60%!important;
         visibility: hidden;
     }
-    
+    body
+    {
+        -webkit-overflow-scrolling: touch
+    } 
 }
 @media screen and (min-width: 824px) and (max-width: 1077px) 
 {
