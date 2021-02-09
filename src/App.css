@@ -41,13 +41,6 @@ body::-webkit-scrollbar-thumb
     border-radius: 5px;
     background: yellow;
 }
-body {
-    min-height: 100vh!important;
-    min-height: -webkit-fill-available!important;
-  }
-  html {
-    height: -webkit-fill-available!important;
-  }
 .icon:hover
 {
     cursor: pointer;
@@ -60,7 +53,8 @@ body {
 /*menu*/
 #menu
 {
-    min-height: 100vh!important;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 0%;
     visibility: hidden;
     z-index: 3!important;
