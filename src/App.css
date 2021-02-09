@@ -132,7 +132,8 @@ body::-webkit-scrollbar-thumb
 /*inicio*/
 .mandril
 {
-    min-height: 100vh!important;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background-image: url("./media/mandril.jpg");
     background-attachment: fixed;
     background-size: cover;
