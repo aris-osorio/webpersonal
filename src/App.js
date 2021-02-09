@@ -34,7 +34,7 @@ export default function App() {
       document.getElementById('menu').classList.remove("desactivado");
       items[0].style.opacity = 1;
       items[0].style.pointerEvents = "";
-      //document.getElementsByTagName("BODY")[0].classList.add('no_scroll');
+      document.getElementsByTagName("BODY")[0].classList.add('no_scroll');
     }); 
 
     for(let i = 0; i <  btn_cerrar.length; i++)
@@ -44,7 +44,7 @@ export default function App() {
         document.getElementById('menu').classList.remove("activado");
         items[0].style.opacity = 0;
         items[0].style.pointerEvents = "none";
-        //document.getElementsByTagName("BODY")[0].classList.remove('no_scroll');
+        document.getElementsByTagName("BODY")[0].classList.remove('no_scroll');
       });
     }
 
