@@ -54,7 +54,6 @@ body::-webkit-scrollbar-thumb
 #menu
 {
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     width: 0%;
     visibility: hidden;
     z-index: 3!important;
@@ -133,12 +132,9 @@ body::-webkit-scrollbar-thumb
 .mandril
 {
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     background-image: url("./media/mandril.jpg");
     background-attachment: fixed;
     background-size: cover;
-    -webkit-perspective: 1000;
-    -webkit-backface-visibility: hidden;
 }
 .title
 {
