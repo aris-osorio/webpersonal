@@ -141,7 +141,7 @@ html
     background-attachment: fixed;
     background-size: cover;
 }
-mandril:active 
+.mandril:active 
 {
     height: auto;
 }
