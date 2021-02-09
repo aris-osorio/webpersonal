@@ -137,10 +137,6 @@ body::-webkit-scrollbar-thumb
     background-attachment: fixed;
     background-size: cover;
     display: table;
-    width: 100%;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    will-change: transform;
 }
 .title
 {
