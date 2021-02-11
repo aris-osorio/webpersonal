@@ -20,58 +20,13 @@ export default function Proyectos() {
                     <div className="col-12 d-flex justify-content-center pt-5 pb-3">
                         <h1 className="subtitle yellow">Proyectos</h1>
                     </div>
-                    <div className="col-12">
-                        <p className="white text-justify">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
-                    </div>
                     <Swiper 
                         className="aparece"
                         effect="coverflow"
-                        spaceBetween={30}
-                        slidesPerView = {3}
+                        spaceBetween={50}
+                        slidesPerView = {1}
                         navigation
                         loop={true}
-                        breakpoints=
-                        {
-                            {
-                                200: 
-                                {
-                                    width: 200,
-                                    slidesPerView: 1,
-                                    spaceBetween: 50,
-                                },
-                                400: 
-                                {
-                                    width: 418,
-                                    slidesPerView: 1,
-                                    spaceBetween: 0,
-                                },
-                                576: 
-                                {
-                                    width: 518,
-                                    slidesPerView: 1,
-                                    spaceBetween : 0,
-                                },
-                                823: 
-                                {
-                                    width: 765,
-                                    slidesPerView: 3,
-                                },
-                                1077: 
-                                {
-                                    width: 1049,
-                                    slidesPerView: 3,
-                                },
-                                1199.98: 
-                                {
-                                    width: 1142,
-                                    slidesPerView: 3,
-                                }
-                            }
-                        }
-                        
                     >
                         <SwiperSlide><MemeChat/></SwiperSlide>
                         <SwiperSlide><SimpleTasks/></SwiperSlide>

@@ -128,7 +128,7 @@ body::-webkit-scrollbar-thumb
 .mandril
 {
     height: 100vh;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: calc(var(--vh, 1vh) * 100);
@@ -216,6 +216,11 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
 .pb
 {
     padding-bottom: 60px;
+}
+.contacto
+{
+    padding-top: 60px;
+    padding-bottom: 47px;
 }
 /*------------------------Responsive Design--------------------*/
 @media screen and (max-width: 476px)
