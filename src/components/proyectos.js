@@ -17,8 +17,14 @@ export default function Proyectos() {
         <section id="proyectos">
             <div className="bg-black">
                 <div className="container pt-5 pb-5">
-                    <div className="col-12 d-flex justify-content-center p-5">
-                        <h1 className="subtitle julius yellow">Proyectos</h1>
+                    <div className="col-12 d-flex justify-content-center pt-5 pb-3">
+                        <h1 className="subtitle yellow">Proyectos</h1>
+                    </div>
+                    <div className="col-12">
+                        <p className="white text-justify">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        </p>
                     </div>
                     <Swiper 
                         className="aparece"
