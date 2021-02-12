@@ -128,16 +128,11 @@ body::-webkit-scrollbar-thumb
 .mandril
 {
     height: 100vh;
-    /*background-size: cover;*/
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: calc(var(--vh, 1vh) * 100);
     background-image: url("./media/mandril.jpg");  
-}
-.container-titulo
-{
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
 }
 .title
 {
@@ -241,6 +236,7 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .mandril
     {
         background-image: url("./media/mandril1.jpg");
+        /*background-attachment: inherit;*/
     }
     .title
     {
@@ -266,10 +262,6 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         max-width: 30%!important;
         visibility: hidden;
     }
-    body
-    {
-        -webkit-overflow-scrolling: touch
-    }
 }
 @media screen and (min-width: 477px) and (max-width: 576px)
 {   
@@ -284,6 +276,7 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .mandril
     {
         background-image: url("./media/mandril1.jpg");
+       /*background-attachment: inherit;*/
     }
     .col-8
     {
@@ -305,10 +298,6 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         max-width: 30%!important;
         visibility: hidden;
     }
-    body
-    {
-        -webkit-overflow-scrolling: touch
-    }
 
 }
 @media screen and (min-width: 575px) and (max-width: 823px)
@@ -324,6 +313,7 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .mandril
     {
         background-image: url("./media/mandril3.jpg");
+        /*background-attachment: inherit;*/
     }
     .col-8
     {
@@ -356,10 +346,6 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         max-width: 60%!important;
         visibility: hidden;
     }
-    body
-    {
-        -webkit-overflow-scrolling: touch
-    } 
 }
 @media screen and (min-width: 824px) and (max-width: 1077px) 
 {
