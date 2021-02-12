@@ -11,14 +11,6 @@ export default function App() {
 
   useEffect(() => {
 
-    let vh = (window.innerHeight * 0.01);
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-    window.addEventListener('resize', () => {
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
-
     let links = document.getElementsByClassName('Link');
     let links_menu = document.getElementsByClassName('links-menu');
     let items = document.getElementsByClassName('items-menu');
