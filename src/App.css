@@ -236,7 +236,7 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .mandril
     {
         background-image: url("./media/mandril1.jpg");
-        /*background-attachment: inherit;*/
+        background-attachment: inherit!important;
     }
     .title
     {
@@ -276,7 +276,7 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .mandril
     {
         background-image: url("./media/mandril1.jpg");
-       /*background-attachment: inherit;*/
+        background-attachment: inherit!important;
     }
     .col-8
     {
@@ -313,7 +313,7 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .mandril
     {
         background-image: url("./media/mandril3.jpg");
-        /*background-attachment: inherit;*/
+        background-attachment: inherit!important;
     }
     .col-8
     {
