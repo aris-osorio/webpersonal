@@ -134,6 +134,11 @@ body::-webkit-scrollbar-thumb
     height: calc(var(--vh, 1vh) * 100);
     background-image: url("./media/mandril.jpg");  
 }
+.container-titulo
+{
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
 .title
 {
     font-size: 100px; 
