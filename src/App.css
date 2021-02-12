@@ -306,7 +306,23 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         max-width: 30%!important;
         visibility: hidden;
     }
-
+    .lap-simple
+    {
+        background-image:none;
+        min-height: 0px!important;
+    }
+    .d-flex > .pr-5
+    {
+        padding-right: 0%!important;
+    }
+    .row > .p-0
+    {
+        padding-left: 20px!important;
+    }
+    .row > .pt-5
+    {
+        padding-top: 20px!important;
+    }
 }
 @media screen and (min-width: 575px) and (max-width: 823px)
 {  
