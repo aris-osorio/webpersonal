@@ -1,23 +1,27 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 export default function MemeChat() {
     const redireccionar = (link) => {
         window.open(link, '_blank');
     }
     return (
-        <div className="d-flex justify-content-center pt-5p p-5">
-            <div className="row">
-                <div className="col-sm-7">
-                    <div className="lap-simple d-flex align-items-center" />
+        <div className="d-flex justify-content-center p-5">
+            <div className="row pr-5">
+                <div className="col-sm-8 p-0">
+                    <div>
+                        <div className="lap-simple d-flex align-items-center" />
+                    </div>
                 </div>
-                <div className="col-sm-5 p-5">
+                <div className="col-sm-4 pt-5">
                     <div className="col-12 d-flex justify-content-center">
                         <h3 className="yellow">Meme chat</h3>
                     </div>
                     <p className="mt-2 white text-justify">
                         Chat-bot donde puedes interactuar con la llama "ola ke ase?"
-                        programada con algunas frases mas usadas en los memes
+                        programada con algunas frases mas usadas en los memes.esta
+                        aplicacion fue desarrollada con react redux
                     </p>
                     <br/>
                     <div className="d-flex justify-content-center">
@@ -31,5 +35,6 @@ export default function MemeChat() {
                 </div>
             </div>
         </div>
+        
     )
 }

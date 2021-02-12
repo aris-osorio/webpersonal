@@ -181,11 +181,12 @@ span
 /*Simple Tasks*/
 .lap-simple
 {
-    height: 376px;
-    width: 671px;
+    min-height: 376px;
+    min-width: 100%;
     background-image:url("./media/laptop1.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-size: contain;
 }
 
 /*contactame*/

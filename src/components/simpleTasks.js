@@ -8,11 +8,13 @@ export default function SimpleTasks() {
     }
     return (
         <div className="d-flex justify-content-center p-5">
-            <div className="row">
-                <div className="col-sm-7">
-                    <div className="lap-simple d-flex align-items-center" />
+            <div className="row pr-5">
+                <div className="col-sm-8 p-0">
+                    <div>
+                        <div className="lap-simple d-flex align-items-center" />
+                    </div>
                 </div>
-                <div className="col-sm-5 p-5">
+                <div className="col-sm-4 pt-5">
                     <div className="col-12 d-flex justify-content-center">
                         <h3 className="yellow">Simple Tasks</h3>
                     </div>
