@@ -54,7 +54,7 @@ export default function App() {
     let topVent = html.scrollTop;
     for(let i = 0; i < elementoAparece.length; i++){
       let topelemAparece = elementoAparece[i].offsetTop;
-      if(topVent > topelemAparece - 500){
+      if(topVent > topelemAparece){
         links_menu[i].classList.add('bg-links')
         for(let j = 0; j < elementoAparece.length; j++){
           if(j !== i)
