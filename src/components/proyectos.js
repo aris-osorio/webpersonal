@@ -28,7 +28,6 @@ export default function Proyectos() {
                         navigation
                         loop={true}
                     >
-                        <SwiperSlide><MemeChat/></SwiperSlide>
                         <SwiperSlide><SimpleTasks/></SwiperSlide>
                         <SwiperSlide><MemeChat/></SwiperSlide>
                     </Swiper>

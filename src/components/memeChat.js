@@ -6,24 +6,27 @@ export default function MemeChat() {
         window.open(link, '_blank');
     }
     return (
-        <div className="d-flex justify-content-center pt-5p b-5">
-            <div className="cursor">
-                <div className="col-12 d-flex justify-content-center">
-                    <h3 className="yellow">Meme chat</h3>
+        <div className="d-flex justify-content-center pt-5p p-5">
+            <div className="row">
+                <div className="col-sm-7">
+                    <div className="lap-simple d-flex align-items-center" />
                 </div>
-                <p className="mt-2 white text-justify">
-                    Chat-bot donde puedes interactuar con la llama "ola ke ase?"
-                    programada con algunas frases mas usadas en los memes .para la
-                    creación de esta aplicación se utilizaron las tecnologías html, css,
-                    boostrap y javascript (react).
-                </p>
-                <br />
-                <div className="d-flex justify-content-center">
-                    <div className="pr-4">
-                        <FontAwesomeIcon icon={faExternalLinkAlt} className="fa-4x icon" onClick={() => redireccionar('https://meme-chat.netlify.app/')} />
+                <div className="col-sm-5 p-5">
+                    <div className="col-12 d-flex justify-content-center">
+                        <h3 className="yellow">Meme chat</h3>
                     </div>
-                    <div className="pl-4">
-                        <FontAwesomeIcon icon={faGithub} className="fa-4x icon" onClick={() => redireccionar('https://github.com/aris-osorio/meme-chat')} />
+                    <p className="mt-2 white text-justify">
+                        Chat-bot donde puedes interactuar con la llama "ola ke ase?"
+                        programada con algunas frases mas usadas en los memes
+                    </p>
+                    <br/>
+                    <div className="d-flex justify-content-center">
+                        <div className="pr-4">
+                            <FontAwesomeIcon icon={faExternalLinkAlt} className="fa-4x icon" onClick={() => redireccionar('https://meme-chat.netlify.app/')} />
+                        </div>
+                        <div className="pl-4">
+                            <FontAwesomeIcon icon={faGithub} className="fa-4x icon" onClick={() => redireccionar('https://github.com/aris-osorio/meme-chat')} />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -178,6 +178,15 @@ span
 {
     z-index: 1!important;
 }
+/*Simple Tasks*/
+.lap-simple
+{
+    height: 376px;
+    width: 671px;
+    background-image:url("./media/laptop1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /*contactame*/
 input, textarea
