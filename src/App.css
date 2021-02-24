@@ -20,7 +20,15 @@
 {
     background-color:#000000;
 }
-
+body {
+    min-height: 100vh!important;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available!important;
+  }
+  
+html {
+    height: -webkit-fill-available!important;
+  }
 /*App*/
 *
 {
