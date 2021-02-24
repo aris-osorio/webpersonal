@@ -127,10 +127,12 @@ body::-webkit-scrollbar-thumb
 .mandril
 {
     height: 100vh;
+    z-index: -10;
+    background: url("./media/mandril.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-image: url("./media/mandril.jpg");  
 }
 .title
 {
