@@ -127,7 +127,11 @@ body::-webkit-scrollbar-thumb
 .mandril
 {
     height: 100vh;
-    background: black;
+    background: url("./media/mandril.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .title
 {
@@ -240,7 +244,7 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     }
     .mandril
     {
-        background-image: url("./media/mandril1.jpg");
+        background-image: black;
         background-attachment: inherit!important;
     }
     .title
@@ -334,7 +338,11 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .mandril
     {
         background-image: url("./media/mandril3.jpg");
-        background-attachment: inherit!important;
+        position: block!important;
+        -webkit-background-size: auto;
+        -moz-background-size: auto;
+        -o-background-size:auto ;
+        background-size: auto;
     }
     .col-8
     {
