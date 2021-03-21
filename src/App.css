@@ -136,7 +136,6 @@ body::-webkit-scrollbar-thumb
 {
     height: 100vh;
     background: url("./media/mandril.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -197,6 +196,17 @@ span
     background-size: 100% 100%;
     background-size: contain;
 }
+.tarjeta
+{
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+    padding-left: 3rem!important;
+    padding-right: 3rem!important;
+}
+.contenido-tarjeta
+{
+    padding-top: 3rem!important;
+}
 
 /*contactame*/
 input, textarea
@@ -230,14 +240,9 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
 {
     background: yellow!important;
 }
-.pb
+.btn2
 {
-    padding-bottom: 60px;
-}
-.contacto
-{
-    padding-top: 60px;
-    padding-bottom: 47px;
+    padding-left: 20px;
 }
 /*------------------------Responsive Design--------------------*/
 @media screen and (max-width: 476px)
@@ -252,8 +257,7 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     }
     .mandril
     {
-        background: black;
-        background-attachment: inherit!important;
+        background-image: url("./media/mandril1.jpg");
     }
     .title
     {
@@ -279,6 +283,22 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         max-width: 30%!important;
         visibility: hidden;
     }
+    .tarjeta
+    {
+        padding-top: 0px!important;
+    }
+    .tarjeta > .pr-5
+    {
+        padding-right: 0px!important;
+    }
+    .lap-simple
+    {
+        min-height: 150px!important;
+    }
+    .contenido-tarjeta
+    {
+       padding-top: 0px!important;
+    }
 }
 @media screen and (min-width: 477px) and (max-width: 576px)
 {   
@@ -293,7 +313,6 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .mandril
     {
         background-image: url("./media/mandril1.jpg");
-        background-attachment: inherit!important;
     }
     .col-8
     {
@@ -346,11 +365,6 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .mandril
     {
         background-image: url("./media/mandril3.jpg");
-        position: block!important;
-        -webkit-background-size: auto;
-        -moz-background-size: auto;
-        -o-background-size:auto ;
-        background-size: auto;
     }
     .col-8
     {

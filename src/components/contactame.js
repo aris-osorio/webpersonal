@@ -28,28 +28,26 @@ export default function Contactame() {
         document.getElementById("inputMensaje").value = "";
     }
 
-    const bloquear = () =>{
+    const bloquear = () => {
         document.getElementById("inputName").classList.add("desactivar")
         document.getElementById("inputEmail").classList.add("desactivar")
         document.getElementById("inputMensaje").classList.add("desactivar")
         document.getElementById("Btnenviar").classList.add("desactivar")
     }
 
-    const desbloquear = () =>{
+    const desbloquear = () => {
         document.getElementById("inputName").classList.remove("desactivar")
         document.getElementById("inputEmail").classList.remove("desactivar")
         document.getElementById("inputMensaje").classList.remove("desactivar")
         document.getElementById("Btnenviar").classList.remove("desactivar")
     }
 
-    const flecha=()=>
-    {
+    const flecha = () => {
         setIcono([<FontAwesomeIcon icon={faLongArrowAltRight} />, "mt-1"])
     }
 
-    const cargando=()=>
-    {
-        setIcono([<ClipLoader color="yellow" loading = {true} size={20} />, "mt-1"])
+    const cargando = () => {
+        setIcono([<ClipLoader color="yellow" loading={true} size={20} />, "mt-1"])
     }
 
     const enviarCorreo = () => {
@@ -74,7 +72,7 @@ export default function Contactame() {
 
     return (
         <section id="contactame">
-            <div className="bg-black">
+            <div className=" vh-100 bg-black">
                 <div className="container contacto">
                     <div className="col-12 d-flex justify-content-center p-5">
                         <h1 className="subtitle yellow">Contactame</h1>
@@ -89,20 +87,24 @@ export default function Contactame() {
                                 <label htmlFor="inputEmail" className="yellow">Tu correo</label>
                                 <input type="email" className="form-control form-control-lg input rounded-0 border-top-0 border-left-0 border-right-0" ref={txt => correo = txt} id="inputEmail" placeholder="name@example.com" />
                             </div>
-                        </div>
-                        <div className="p-3">
-                            <label htmlFor="inputMensaje" className="yellow">Tu mensaje</label>
-                            <textarea className="form-control form-control-lg mb-3 input rounded-0 border-top-0 border-left-0 border-right-0" ref={txt => mensaje = txt} id="inputMensaje" placeholder="Ingresa tu mensaje aqui" rows="3" />
-                            <div className="d-flex">
-                                <button id="Btnenviar" type="button" className="d-flex btn btn-outline-warning btn-lg yellow" onClick={enviarCorreo}><div className="mr-2">Enviar</div> <div className= {icono[1]}>{icono[0]}</div></button>
+                            <div className="col-sm-12 p-3">
+                                <label htmlFor="inputMensaje" className="yellow">Tu mensaje</label>
+                                <textarea className="form-control form-control-lg mb-3 input rounded-0 border-top-0 border-left-0 border-right-0" ref={txt => mensaje = txt} id="inputMensaje" placeholder="Ingresa tu mensaje aqui" rows="3" />
                             </div>
                         </div>
-                        <div className="col-12 d-flex justify-content-center pt-2">
-                            <div className="pr-4">
-                                <FontAwesomeIcon icon={faLinkedinIn} className="fa-4x icon" onClick={() => redireccionar('https://www.linkedin.com/in/aris-osorio/')} />
+                        <div className="row d-flex pl-3 pr-3 pb-4">
+                            <div className="col-6">
+                                <div className="d-flex">
+                                    <button id="Btnenviar" type="button" className="d-flex btn btn-outline-warning btn-lg yellow" onClick={enviarCorreo}><div className="mr-2">Enviar</div> <div className={icono[1]}>{icono[0]}</div></button>
+                                </div>
                             </div>
-                            <div className="pl-4">
-                                <FontAwesomeIcon icon={faGithub} className="fa-4x icon" onClick={() => redireccionar('https://github.com/aris-osorio')} />
+                            <div className="col-6 d-flex justify-content-center">
+                                <div className="btn1">
+                                    <FontAwesomeIcon icon={faLinkedinIn} className="fa-4x icon" onClick={() => redireccionar('https://www.linkedin.com/in/aris-osorio/')} />
+                                </div>
+                                <div className="btn2">
+                                    <FontAwesomeIcon icon={faGithub} className="fa-4x icon" onClick={() => redireccionar('https://github.com/aris-osorio')} />
+                                </div>
                             </div>
                         </div>
                     </div>
