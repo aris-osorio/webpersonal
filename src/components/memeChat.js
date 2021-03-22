@@ -15,7 +15,7 @@ export default function MemeChat() {
                     </div>
                 </div>
                 <div className="col-sm-4 contenido-tarjeta">
-                    <div className="col-12 d-flex justify-content-center">
+                    <div className="col-12 d-flex justify-content-center titulo-simple">
                         <h3 className="yellow">Meme chat</h3>
                     </div>
                     <p className="mt-2 white text-justify">

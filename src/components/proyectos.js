@@ -16,7 +16,7 @@ export default function Proyectos() {
     return (
         <section id="proyectos">
             <div className="bg-black">
-                <div className="container pt-5 pb-5">
+                <div className="container pt-5 pb-5 sub">
                     <div className="col-12 d-flex justify-content-center pt-5 pb-3">
                         <h1 className="subtitle yellow">Proyectos</h1>
                     </div>
