@@ -10,8 +10,8 @@ export default function SimpleTasks() {
         <div className="tarjeta d-flex justify-content-center">
             <div className="row pr-5">
                 <div className="col-sm-8 p-0">
-                    <div>
-                        <div className="lap-simple d-flex align-items-center" />
+                    <div className="d-flex align-items-center justify-content-center">
+                        <div className="lap-simple" />
                     </div>
                 </div>
                 <div className="col-sm-4 contenido-tarjeta">

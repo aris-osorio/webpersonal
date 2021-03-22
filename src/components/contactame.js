@@ -72,8 +72,8 @@ export default function Contactame() {
 
     return (
         <section id="contactame">
-            <div className=" vh-100 bg-black">
-                <div className="container contacto">
+            <div className="bg-black">
+                <div className="container pt-5 pb-5">
                     <div className="col-12 d-flex justify-content-center p-5">
                         <h1 className="subtitle yellow">Contactame</h1>
                     </div>
@@ -93,12 +93,12 @@ export default function Contactame() {
                             </div>
                         </div>
                         <div className="row d-flex pl-3 pr-3 pb-4">
-                            <div className="col-6">
+                            <div className="col-3">
                                 <div className="d-flex">
                                     <button id="Btnenviar" type="button" className="d-flex btn btn-outline-warning btn-lg yellow" onClick={enviarCorreo}><div className="mr-2">Enviar</div> <div className={icono[1]}>{icono[0]}</div></button>
                                 </div>
                             </div>
-                            <div className="col-6 d-flex justify-content-center">
+                            <div className="col-9 d-flex justify-content-center">
                                 <div className="btn1">
                                     <FontAwesomeIcon icon={faLinkedinIn} className="fa-4x icon" onClick={() => redireccionar('https://www.linkedin.com/in/aris-osorio/')} />
                                 </div>

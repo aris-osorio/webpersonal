@@ -4,6 +4,11 @@
 
 
 /*helpers*/
+.aparece
+{
+    opacity: 0;
+    transition: all .5s;
+}
 .cover
 {
     background-size: cover;
@@ -135,7 +140,7 @@ body::-webkit-scrollbar-thumb
 .mandril
 {
     height: 100vh;
-    background: url("./media/mandril.jpg") no-repeat center center fixed;
+    background: url("./media/mandril.jpg") no-repeat center center;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -189,7 +194,6 @@ span
 /*Simple Tasks*/
 .lap-simple
 {
-    min-height: 376px;
     min-width: 100%;
     background-image:url("./media/laptop1.png");
     background-repeat: no-repeat;
@@ -293,12 +297,13 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     }
     .lap-simple
     {
-        min-height: 150px!important;
+        height: 150px!important;
     }
     .contenido-tarjeta
     {
        padding-top: 0px!important;
     }
+
 }
 @media screen and (min-width: 477px) and (max-width: 576px)
 {   
@@ -334,22 +339,29 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         max-width: 30%!important;
         visibility: hidden;
     }
-    .lap-simple
-    {
-        background-image:none;
-        min-height: 0px!important;
-    }
     .d-flex > .pr-5
     {
         padding-right: 0%!important;
     }
-    .row > .p-0
-    {
-        padding-left: 20px!important;
-    }
     .row > .pt-5
     {
         padding-top: 20px!important;
+    }
+    .tarjeta
+    {
+        padding-top: 0px!important;
+    }
+    .tarjeta > .pr-5
+    {
+        padding-right: 0px!important;
+    }
+    .lap-simple
+    {
+        height: 225px!important;
+    }
+    .contenido-tarjeta
+    {
+       padding-top: 0px!important;
     }
 }
 @media screen and (min-width: 575px) and (max-width: 823px)
@@ -397,6 +409,28 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
         max-width: 60%!important;
         visibility: hidden;
     }
+    .col-sm-8, .col-sm-4
+    {
+        flex: 100%!important;
+        max-width: 100%!important;
+    }
+    .tarjeta
+    {
+        padding-top: 0px!important;
+    }
+    .tarjeta > .pr-5
+    {
+        padding-right: 0px!important;
+    }
+    .lap-simple
+    {
+        height:230px!important;
+        min-width: 400px!important;
+    }
+    .contenido-tarjeta
+    {
+       padding-top: 0px!important;
+    }
 }
 @media screen and (min-width: 824px) and (max-width: 1077px) 
 {
@@ -435,6 +469,37 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     {
         visibility: hidden!important;
     }
+    .col-sm-8, .col-sm-4
+    {
+        flex: 100%!important;
+        max-width: 100%!important;
+    }
+    .tarjeta
+    {
+        padding-top: 0px!important;
+    }
+    .tarjeta > .pr-5
+    {
+        padding-right: 0px!important;
+    }
+    .lap-simple
+    {
+        height: 230px!important;
+        min-width: 400px!important;
+    }
+    .contenido-tarjeta
+    {
+       padding-top: 0px!important;
+    }
+    .pb-4 > .col-9
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .btn2
+    {
+        padding-left: 40px;
+    }
 
 }
 @media screen and (min-width: 1078px)  
@@ -456,5 +521,23 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     .items-menu
     {
         visibility: hidden!important;
+    }
+    .mandril
+    {
+        background-attachment: fixed;
+    }
+    .lap-simple
+    {
+        height: 376px!important;
+        width: 100px!important;
+    }
+    .pb-4 > .col-9
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .btn2
+    {
+        padding-left: 40px;
     }
 }

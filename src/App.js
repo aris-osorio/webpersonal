@@ -55,6 +55,7 @@ export default function App() {
     for(let i = 0; i < elementoAparece.length; i++){
       let topelemAparece = elementoAparece[i].offsetTop;
       if(topVent > topelemAparece - 200){
+        elementoAparece[i].style.opacity = 1;
         links_menu[i].classList.add('bg-links')
         for(let j = 0; j < elementoAparece.length; j++){
           if(j !== i)
